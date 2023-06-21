@@ -15,18 +15,12 @@
 #ifdef _WIN32
     #include <conio.h> 
     #include <windows.h>
-    void coord_xy(short x, short y) {
-        COORD pos = {x, y};
-        SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
-    }
+    #include "window_util_headers/windowsutil.h"
 
 #elif defined(__linux__) || defined(__unix__)
     // Linux/Unix implementation
     #include <stdio.h>
-
-    void coord_xy(short x, short y) {
-        printf("\033[%d;%dH", y, x);
-    }
+    #include "unix_linux_util_headers/linuxutil.h"
 
 #else
     #error Unsupported operating system
