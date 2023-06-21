@@ -28,55 +28,46 @@ void *getCurrentDate(d1 *exam_date){
   return NULL;
 }
 
-void *timer1(void *timeset){  //definition of timer function.
-	pthread_mutex_init(&mut1,NULL);
-	pthread_t id2;
-	id2 = pthread_self();
-	int h=0,m=0,sec=0; 
-	int *s = timeset;
-	sec = *s * 60;
-	if(sec>=60){
-		m=sec/60;
-		sec = sec-(m*60);
-		if(m>=60){
-			h=m/60;
-			m = m-(h*60);
-		}
-	}
-	fflush(stdin);
-	while(h>0||m>0||sec>0){
-				while(m>0||sec>0){
-					while(sec>0){
-						sleep(1);
-						coord_xy(27,22);
-						coord_xy(80,3);printf("%.2d : ",h);
-						coord_xy(27,22);
-						coord_xy(90,3);printf("%.2d : ",m);
-						coord_xy(27,22);
-						coord_xy(101,3);printf("%.2d",sec);
-						coord_xy(27,22);
-						if(time_to_exit==1){
-							pthread_exit(&id2);
-						}
-						sec--;
-						}
-					if(m>0){
-					sec=60;
-					m--;
-					}
-				}
-			if(h>0){
-			m=60;
-			h--;
-		}
-	}
-	
-	pthread_mutex_lock(&mut1);
-	if(sec == 0){
-		time_to_exit=1;
-	}
-	pthread_mutex_unlock(&mut1);
-	
-	pthread_mutex_destroy(&mut1);
+/* Definition of Timer Funciton */
+void* timer1(void* timeset) {
+    pthread_t id2 = pthread_self();
+    int* s = (int*)timeset;
+    int sec = (*s) * 60;
+
+    int h = sec / 3600;
+    int m = (sec % 3600) / 60;
+    sec = sec % 60;
+
+    while (h > 0 || m > 0 || sec > 0) {
+        sleep(1);
+        coord_xy(27, 22);
+        coord_xy(80, 3);
+        printf("%.2d : ", h);
+        coord_xy(27, 22);
+        coord_xy(90, 3);
+        printf("%.2d : ", m);
+        coord_xy(27, 22);
+        coord_xy(101, 3);
+        printf("%.2d", sec);
+        coord_xy(27, 22);
+
+        if (time_to_exit == 1) {
+            pthread_exit(&id2);
+        }
+
+        if (sec > 0) {
+            sec--;
+        } else if (m > 0) {
+            sec = 59;
+            m--;
+        } else if (h > 0) {
+            sec = 59;
+            m = 59;
+            h--;
+        }
+    }
+
+    return NULL;
 }
+
 
