@@ -19,3 +19,16 @@
     #include <unistd.h>
     // Add any additional Unix-specific headers here
 #endif
+
+
+/* Main Program with default command line argument convention */
+int main(int argc, char* argv[]) {
+    // Access and process command-line arguments
+    for (int i = 0; i < argc; i++) {
+        printf("Argument %d: %s\n", i, argv[i]);
+    }
+
+    // Rest of your code
+
+    return 0;
+}
