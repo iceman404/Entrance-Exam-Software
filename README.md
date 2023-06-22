@@ -7,7 +7,7 @@ For timer and exam simultaneous implementation  --pthreads used--
 
 
 
-# Currently I'm trying to refactor this huge pile of single file source code.
-# I look into it and realize that most of the code written here is total garbage/redundant/unnecessary :D
+## Currently I'm trying to refactor this huge pile of single file source code.
+### I'm looking into it now 🐝 🐝
 
-# Anyway it is a memory of me building a C based software for the first time. :D
+#### Anyway it is a memory of me writing C based software for the first time. 🐥🐥
