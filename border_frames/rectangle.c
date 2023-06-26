@@ -1,6 +1,16 @@
 #include <rectangle.h>
 #include <stdio.h>
 
+#include <stdio.h>
+
+void drawHorizontalLine(char edge, char fill, int length) {
+    printf("%c", edge);
+    for (int i = 0; i < length - 2; i++) {
+        printf("%c", fill);
+    }
+    printf("%c", edge);
+}
+
 void rectangle_box() {
     int x, y;
 
@@ -9,12 +19,7 @@ void rectangle_box() {
 
     // Top edge
     coord_xy(1, 1);
-    printf("╔");
-    for (x = 2; x < 110; x++) {
-        coord_xy(x, 1);
-        printf("═");
-    }
-    printf("╗");
+    drawHorizontalLine('╔', '═', 110);
 
     // Right and left edges
     for (y = 2; y < 25; y++) {
@@ -26,12 +31,7 @@ void rectangle_box() {
 
     // Bottom edge
     coord_xy(1, 25);
-    printf("╚");
-    for (x = 2; x < 110; x++) {
-        coord_xy(x, 25);
-        printf("═");
-    }
-    printf("╝");
+    drawHorizontalLine('╚', '═', 110);
 
     // Remove overlapping corners
     coord_xy(110, 1);
@@ -48,3 +48,4 @@ void rectangle_box() {
         printf(" ");
     }
 }
+
