@@ -10,4 +10,4 @@ For timer and exam simultaneous implementation  --pthreads used--
 ## Currently I'm trying to refactor this huge pile of single file source code.
 ### I'm looking into it now 🐝 🐝
 
-#### Anyway it is a memory of me writing C based software for the first time. 🐥🐥
+#### Memory of me writing C code for the first time. 🐥🐥
