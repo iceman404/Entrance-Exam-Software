@@ -7,7 +7,7 @@ For timer and exam simultaneous implementation  --pthreads used--
 
 
 
-## Currently I'm trying to refactor this huge pile of single file source code.
+## Currently I'm trying to refactor this single file source code.
 ### I'm looking into it now 🐝 🐝
 
 #### Memory of writing C code for the first time. 🐥🐥
