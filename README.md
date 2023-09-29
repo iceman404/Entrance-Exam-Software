@@ -23,7 +23,7 @@ This project entails the creation of a console-based test application in the C p
 
 **Project Outcomes:**
 
-1. Console-based online test application.
+1. Console-based test application.
 2. Effective utilization of Unix pthreads for thread synchronization.
 3. Implementation of CRUD operations for student registration.
 
