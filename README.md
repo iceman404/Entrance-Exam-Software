@@ -7,7 +7,7 @@ Development of a Console-Based Test Application in C.
 **Project Description:**
 This project entails the creation of a console-based test application in the C programming language. The primary aim is to apply fundamental C programming concepts in the development of a functional and interactive application. Key project details include:
 
-*Application Type:*  
+**Application Type:**  
 - Console-based C application.
 
 **Multithreading:**  
@@ -19,11 +19,13 @@ This project entails the creation of a console-based test application in the C p
 **Online Test Simulation:**  
 - The core functionality of the application involves simulating a test environment. Students can register, log in, take tests, and view their scores. The timer thread ensures that tests have a time limit, enhancing the realism of the simulation.
 
+
 **Project Outcomes:**
 
 1. Console-based online test application.
 2. Effective utilization of Unix pthreads for thread synchronization.
 3. Implementation of CRUD operations for student registration.
+
 
 **Significance:**
 
