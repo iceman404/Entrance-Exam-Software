@@ -1,6 +1,7 @@
 # First Sem Project:
 
-**Project Title:**  
+**Project Title:** 
+# Title: Entrance-Exam-Software
 Development of a Console-Based Test Application in C.
 
 
@@ -30,7 +31,5 @@ This project entails the creation of a console-based test application in the C p
 **Significance:**
 
 This project serves as a foundational exercise in C programming, encompassing the creation of a console application, multithreading with pthreads, and the practical implementation of CRUD operations. It offers valuable hands-on experience for beginners in the field of programming and software development, emphasizing core concepts that can be applied to more complex projects in the future.
-
-# Title: Entrance-Exam-Software
 
 ## Currently I'm trying to refactor this single file source code.
