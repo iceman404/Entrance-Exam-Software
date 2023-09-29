@@ -8,16 +8,16 @@ Development of a Console-Based Test Application in C.
 This project entails the creation of a console-based test application in the C programming language. The primary aim is to apply fundamental C programming concepts in the development of a functional and interactive application. Key project details include:
 
 **Application Type:**  
--Console-based C application.
+- Console-based C application.
 
 **Multithreading:**  
--Utilization of Unix pthreads to synchronize the main exam thread and timer thread. This ensures a seamless and timed test-taking experience for users.
+- Utilization of Unix pthreads to synchronize the main exam thread and timer thread. This ensures a seamless and timed test-taking experience for users.
 
 **Student Registration:**  
--Implementation of basic CRUD (Create, Read, Update, Delete) operations for student registration. These operations allow the application to manage student records effectively.
+- Implementation of basic CRUD (Create, Read, Update, Delete) operations for student registration. These operations allow the application to manage student records effectively.
 
 **Online Test Simulation:**  
--The core functionality of the application involves simulating a test environment. Students can register, log in, take tests, and view their scores. The timer thread ensures that tests have a time limit, enhancing the realism of the simulation.
+- The core functionality of the application involves simulating a test environment. Students can register, log in, take tests, and view their scores. The timer thread ensures that tests have a time limit, enhancing the realism of the simulation.
 
 **Project Outcomes:**
 
