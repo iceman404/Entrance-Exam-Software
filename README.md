@@ -1,7 +1,6 @@
 ## First Sem Project:
 
-**Project Title:** 
-## Title: `Entrance-Exam-Software`
+## Project Title: `Entrance-Exam-Software`
 Development of a Console-Based Test-simulation Application in C.
 
 
