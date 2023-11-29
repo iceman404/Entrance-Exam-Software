@@ -31,4 +31,5 @@ This project entails the creation of a console-based test application in the C p
 
 This project serves as a foundational exercise in C programming, encompassing the creation of a console application, multithreading with pthreads, and the practical implementation of CRUD operations. It offers valuable hands-on experience for beginners in the field of programming and software development, emphasizing core concepts that can be applied to more complex projects in the future.
 
+---
 #### Currently I'm trying to refactor it.
